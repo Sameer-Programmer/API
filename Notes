@@ -1,0 +1,107 @@
+API Automation with Rest Assured
+Prerequisites for Rest Assured
+Java Basics
+TestNG Framework
+Client/Server Architecture
+Definitions
+Client: The system from which the application is accessed (e.g., your computer).
+Server: The system where the application is hosted, which can be physical or virtual.
+Architecture Types
+One Tier Architecture: Client and server are on a single system (e.g., desktop applications).
+Two Tier Architecture: Multiple clients access the same database or server (e.g., internal organization systems like bank applications).
+Three Tier Architecture: Includes Client Tier, Business Logic Tier, and Database Tier (e.g., web applications).
+Layers in Three Tier Architecture
+Presentation Layer: HTML, JavaScript, CSS
+Application Layer: Java, .NET, Python
+Database Layer: MySQL, Oracle, MongoDB
+API and Web Service
+All Web Services are APIs, but not all APIs are Web Services (APIs become Web Services when they are accessible over the internet).
+Note: When an API is accessible through the internet by customers, it is referred to as a Web Service.
+Types of API
+SOAP (Simple Object Access Protocol)
+REST (Representational State Transfer)
+REST API Methods
+GET: Retrieve data
+POST: Create data
+PUT: Update data
+DELETE: Delete data
+HTTP vs HTTPS
+HTTP (HyperText Transfer Protocol): Fast but not secure; data is transferred without encryption.
+HTTPS (HyperText Transfer Protocol Secure): Slow but secure; data is transferred with encryption.
+URL, URI, and URN
+URI (Uniform Resource Identifier)
+URL (Uniform Resource Locator)
+URN (Uniform Resource Name)
+Example URL Breakdown
+URL: https://en.wikipedia.org/wiki/Main_Page
+
+Protocol: https
+Host/Domain: en.wikipedia.org
+Path: /wiki/Main_Page
+Resource: Main_Page
+Definitions
+
+Endpoint: The specific part of a URL that refers to a resource (e.g., /wiki/Main_Page in the example above).
+API Request and Response
+Key Concepts
+Resource: A server object we are interacting with via URL.
+Payload: The data sent with the request and received in the response.
+Example
+URL: https://reqres.in/api/users?page=2
+
+Protocol: https
+Host: reqres.in
+Endpoint: /api/users?page=2
+WorkSpace
+Workspace: A place where all files are maintained.
+One workspace can have multiple collections.
+Requirements to Test an API
+Endpoint
+Request
+Response
+HTTP Request Methods
+GET: Retrieve a resource.
+POST: Create a resource.
+PUT: Update a resource.
+DELETE: Delete a resource.
+PATCH: Partially update a resource.
+Example URL Breakdown
+URL: https://reqres.in/api/users?page=2
+
+Protocol: https
+Subdomain: reqres
+Domain: in
+Path: /api/users
+Query parameter: ?page=2
+Status Codes
+202 Accepted: The request has been accepted for processing, but the processing is not complete.
+203 Non-Authoritative Information: The request was successful, but the returned metadata may come from a different source.
+Post-API Response Observations
+Status Code
+Response Time
+Data
+Response Payload
+Cookies
+Headers
+Validation
+Assertion Validation: Using libraries (e.g., pm library in Postman) to add validations.
+Status Code Summary
+GET: 200 (Success)
+PUT: 200 (Updated)
+DELETE: 200 (Deleted)
+POST: 201 (Created)
+JSON (JavaScript Object Notation)
+Data Format: Used for data communication between client and server.
+Representation: Key-value pairs.
+Keys must be in double quotes.
+Values can be STRING, INTEGER, BOOLEAN, NULL, OBJECT, or ARRAY.
+Variables
+Purpose
+To store data
+To avoid duplication and rework
+Scope
+Global Level: Accessible throughout the workspace
+Collection Level: Accessible throughout the collection
+Environment Level: Specific to environments
+Local Variable: Specific to local scope
+Data Variable: Used for parameterization in testing
